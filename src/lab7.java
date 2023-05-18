@@ -25,6 +25,7 @@ public class lab7 {
         HashSet<Integer> set = new HashSet<>();
         while(start_point < path.size()){
             set.add(path.get(start_point));
+
             start_point ++;
         }
         return bfs(n, set);
@@ -81,7 +82,7 @@ public class lab7 {
     public static void main (String[] args){
         int n = 9;
         int[][] edges = {{0,1},{1,2},{0,2},{2,6},{6,7},{6,8},{1,3},{3,4},{3,5}};
-        if(n ==0 || edges.length == 0){
+        if(n == 0 || edges.length == 0){
             System.out.print("empty input");
         }
         else {
